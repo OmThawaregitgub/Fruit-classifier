@@ -83,7 +83,7 @@ Then open your browser at:
 
 *(Add screenshots or GIFs here)*
 Example:
-![App Screenshot](images/demo_screenshot.png)
+![App Screenshot](Images/Screenshot (399).png)
 
 ---
 
