@@ -86,7 +86,7 @@ Example:
 (![image alt](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(399).png)
 
 
-(![image alt]([https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(399).png](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(401).png))
+(![image alt](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(401).png)
 
 ---
 
