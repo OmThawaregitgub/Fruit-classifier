@@ -83,7 +83,7 @@ Then open your browser at:
 
 *(Add screenshots or GIFs here)*
 Example:
-![App Screenshot](![image alt](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(399).png)
+(![image alt](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(399).png)
 
 ---
 
