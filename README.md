@@ -81,9 +81,12 @@ Then open your browser at:
 
 ## 📸 Example Output
 
-*(Add screenshots or GIFs here)*
+
 Example:
 (![image alt](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(399).png)
+
+
+(![image alt]([https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(399).png](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(401).png))
 
 ---
 
