@@ -1,152 +1,173 @@
-Here’s a polished **`README.md`** you can use for your GitHub repository — it’s formatted for clear presentation, includes setup instructions, usage, screenshots section, and licensing info:
+# 🍎 Fruit Quality Classifier — FreshHarvest AI System
+
+An AI-powered **fruit freshness inspection system** built using **Streamlit**, designed to automate quality checks and reduce human error in warehouse operations such as those at **FreshHarvest Logistics**.
+
+This application classifies fruits as **Good** or **Not Good** using image analysis.  
+Users can upload images or capture them using their device camera, and the system instantly evaluates freshness.
 
 ---
 
-````markdown
-# 🍎 Fruit Quality Classifier
+# 📘 Project Background (FreshHarvest Use Case)
 
-A **Streamlit web app** that classifies fruit quality as **Good** or **Not Good** using image analysis.  
-Upload a photo or capture one using your camera, and the app will analyze the fruit’s condition in real time!
+FreshHarvest Logistics is a mid-sized company distributing fresh fruits and vegetables across California.  
+They supply produce to supermarkets and farmers' markets, striving for high-quality delivery standards.
 
----
+### **📌 Challenges Identified**
+From the FreshHarvest problem statement:
 
-## 🚀 Features
+1. **Operational Inefficiency**  
+   Manual inspections lead to human error, poor lighting issues, and worker fatigue.
 
-- 🖼️ **Image Upload or Camera Capture**
-- 🧠 **AI-based Fruit Quality Classification**
-- 📊 **Confidence Score and Analysis**
-- 🎨 **Beautiful, Responsive UI**
-- 🪄 **Instant Results**
+2. **Business Losses**  
+   Spoiled items slip through quality checks, leading to refunds, brand damage, and financial loss.
 
----
+3. **Customer Complaints**  
+   Retailers frequently report spoiled or overripe produce — especially **strawberries**, **tomatoes**, and **mangoes**.
 
-## 🧩 Technologies Used
+### **💡 AI-Based Proposed Solution**
+The company plans to install **high-speed cameras** on conveyor belts.  
+A deep learning model will classify fruit crates in real-time as **Fresh** or **Spoiled**.
 
-- **Python 3.8+**
-- **Streamlit** – For interactive web interface  
-- **TensorFlow / Keras** – For deep learning model (placeholder ready)
-- **OpenCV** – For image preprocessing  
-- **PIL (Pillow)** – For image handling  
-- **NumPy** – For numerical operations  
+This project simulates the frontend part of such a system through a user-friendly Streamlit app.
 
 ---
 
-## 📦 Installation & Setup
+# 🌐 Live Demo  
+Experience the AI model in action:
+
+👉 **https://fruit-classifier-mo8b7j6pmflf9vredqgeqh.streamlit.app/**
+
+---
+
+# 🚀 Features
+
+- 🖼️ Upload or capture fruit images  
+- 🤖 Real-time AI-based fruit freshness detection  
+- 📊 Confidence score + detailed analysis  
+- 🎨 Elegant and responsive UI with custom styling  
+- 🚦 Clear Good / Not Good classification result  
+- 📌 Supports multiple fruit types (from FreshHarvest dataset)
+
+---
+
+# 🧠 Fruits Included (FreshHarvest Dataset)
+
+The system supports 8 fruits/vegetables from the problem statement:
+
+- 🍌 Banana  
+- 🍋 Lemon  
+- 🥝 Lulo  
+- 🥭 Mango  
+- 🍊 Orange  
+- 🍓 Strawberry  
+- 🍅 Tomato  
+- 🍈 Tamarillo  
+
+---
+
+# 🧩 Technologies Used
+
+- **Python 3.8+**  
+- **Streamlit** — Web UI  
+- **TensorFlow / Keras** — Deep learning model (plug & play ready)  
+- **Pillow (PIL)** — Image processing  
+- **NumPy** — Numerical operations  
+- **OpenCV** (optional, can be replaced with PIL resize)  
+
+---
+
+# 📦 Installation & Setup
 
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/yourusername/fruit-quality-classifier.git
 cd fruit-quality-classifier
-````
-
-### 2️⃣ Create a Virtual Environment (optional but recommended)
-
-```bash
-python -m venv venv
-source venv/bin/activate     # On Mac/Linux
-venv\Scripts\activate        # On Windows
 ```
 
-### 3️⃣ Install Required Dependencies
+### 2️⃣ Create a Virtual Environment (recommended)
+```bash
+python -m venv venv
+source venv/bin/activate      # macOS/Linux
+venv\Scripts\activate         # Windows
+```
 
+### 3️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-If you don’t have a `requirements.txt` file yet, you can create one using:
-
-```bash
-pip freeze > requirements.txt
-```
-
 ### 4️⃣ Run the App
-
 ```bash
 streamlit run app.py
 ```
 
-Then open your browser at:
-👉 [http://localhost:8501](http://localhost:8501)
+---
+
+# 🖥️ How It Works
+
+1. User uploads or captures a fruit image  
+2. Image is preprocessed (resized, normalized)  
+3. AI model predicts freshness  
+4. Result shown with:  
+   - Predicted class  
+   - Confidence score  
+   - Detailed interpretation  
+   - Visual indicators (colors, animations)
 
 ---
 
-## 🖥️ How It Works
+# 📸 Example Output
 
-1. **Upload or capture** an image of a fruit.
-2. The app **preprocesses** the image and passes it to the classifier.
-3. The model predicts whether the fruit is **Good** or **Not Good**.
-4. A **confidence score** and **detailed interpretation** are displayed.
+### Example Screenshots
 
----
+![Screenshot 1](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(399).png)
 
-## 📸 Example Output
-
-
-Example:
-(![image alt](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(399).png)
-
-
-(![image alt](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(401).png)
+![Screenshot 2](https://github.com/OmThawaregitgub/Fruit-classifier/blob/master/Images/Screenshot%20(401).png)
 
 ---
 
-## 🧠 Model Integration
+# 🧠 Model Integration Guide
 
-The app currently uses a **demo prediction** for showcasing purposes.
-To integrate your **trained model**:
+The app currently uses a **demo prediction**.  
+To integrate your real AI model:
 
-1. Save your model (e.g., `fruit_model.h5`) in the project directory.
-2. Update the model path in the `load_model()` method inside `app.py`.
-3. Modify the `predict()` function to use your model’s inference logic.
-
----
-
-## 🥝 Supported Fruits
-
-* Apples 🍏
-* Oranges 🍊
-* Bananas 🍌
-* Grapes 🍇
-* Strawberries 🍓
-* Mangoes 🥭
+1. Save your trained model (e.g., `fruit_model.h5`) in the project directory  
+2. Update the `load_model()` function inside `FruitQualityClassifier`  
+3. Modify the `predict()` method to call the model's inference  
+4. Ensure input shape matches your model (e.g., 224×224×3)
 
 ---
 
-## 📚 Folder Structure
+# 📂 Folder Structure
 
 ```
 fruit-quality-classifier/
 │
-├── app.py                  # Main Streamlit application
-├── model/                  # (Optional) Folder for trained model
-├── images/                 # Screenshots or sample images
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+├── app.py                 # Main Streamlit application
+├── model/                 # Folder for trained model (optional)
+├── images/                # Screenshots / input samples
+├── requirements.txt       # Dependencies
+└── README.md              # Documentation
 ```
 
 ---
 
-## 🧑‍💻 Author
+# 🧑‍💻 Author
 
-**Your Name**
-📧 [your.email@example.com](mailto:your.email@example.com)
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** — you are free to use, modify, and distribute it.
+**Your Name**  
+📧 your.email@example.com  
+🔗 GitHub: https://github.com/yourusername  
+🔗 LinkedIn: https://linkedin.com/in/yourprofile  
 
 ---
 
-**⭐ Don’t forget to star this repo if you like it!**
+# 📜 License
 
-> Built with ❤️ using [Streamlit](https://streamlit.io/)
-
-```
+This project is distributed under the **MIT License**.  
+You are free to use, modify, and distribute the software.
 
 ---
 
-Would you like me to generate a matching `requirements.txt` file for this project too (based on your `app.py` imports)?
-```
+### ⭐ If you found this useful, please give the repository a star!  
+Built with ❤️ using **Streamlit**.
+
