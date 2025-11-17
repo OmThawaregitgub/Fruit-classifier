@@ -155,9 +155,8 @@ fruit-quality-classifier/
 # 🧑‍💻 Author
 
 **Your Name**  
-📧 your.email@example.com  
-🔗 GitHub: https://github.com/yourusername  
-🔗 LinkedIn: https://linkedin.com/in/yourprofile  
+📧 othaware175@gmail.com   
+🔗 LinkedIn: www.linkedin.com/in/om-thaware 
 
 ---
 
