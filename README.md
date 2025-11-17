@@ -154,7 +154,7 @@ fruit-quality-classifier/
 
 # 🧑‍💻 Author
 
-**Your Name**  
+**Om Thaware**  
 📧 othaware175@gmail.com   
 🔗 LinkedIn: www.linkedin.com/in/om-thaware 
 
